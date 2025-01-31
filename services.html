@@ -13,23 +13,18 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Professional Services & Solutions - Your Business Name">
     <meta property="og:description" content="Explore our professional services and solutions tailored to your business needs.">
-    <meta property="og:image" content="https://www.secuversetechnologies.com/images/services-og.jpg">
-    <meta property="og:url" content="https://www.secuversetechnologies.com/services.html">
+    <meta property="og:image" content="https://www.secuverse.ai/images/services-og.jpg">
+    <meta property="og:url" content="https://www.secuverse.ai/services.html">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.secuversetechnologies.com/services.html">
+    <link rel="canonical" href="https://www.secuverse.ai/services.html">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'YOUR-GA-ID');
-    </script>    
+    <!-- JS -->
+    <script src="main.js"></script> 
+
 </head>
 <body>
     <nav>
@@ -39,10 +34,18 @@
             <span class="highlight">V</span>
             <span>erse</span>
         </a>
-        <ul>
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>

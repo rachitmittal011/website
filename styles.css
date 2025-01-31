@@ -56,6 +56,87 @@ nav ul li a:hover {
     color: var(--color-background);
 }
 
+
+
+/* .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s ease;
+} */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-left: auto; /* Aligns to the right */
+}
+
+.hamburger:hover {
+    background-color: #f0f0f0;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger animation when active */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+
+
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--color-primary), var(--color-background));
@@ -95,9 +176,9 @@ nav ul li a:hover {
 .cta-button {
     background-color: var(--color-background);
     color: var(--color-accent);
-    padding: 1rem 2rem;
+    padding: 0.9rem 1.8rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 1.1rem;
     cursor: pointer;
     transition: background-color 0.3s;

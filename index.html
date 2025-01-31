@@ -13,18 +13,12 @@
     <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:title" content="SecuVerse Technologies - Professional Services & Solutions">
     <meta property="og:description" content="Professional services to help your business grow. Expert solutions in [your services].">
-    <meta property="og:image" content="https://www.secuversetechnologies.com/images/og-image.jpg">
-    <meta property="og:url" content="https://www.secuversetechnologies.com">
+    <meta property="og:image" content="https://www.secuverse.ai/images/og-image.jpg">
+    <meta property="og:url" content="https://www.secuverse.ai">
     <meta property="og:type" content="website">
     
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SecuVerse Technologies - Professional Services & Solutions">
-    <meta name="twitter:description" content="Professional services to help your business grow. Expert solutions in [your services].">
-    <meta name="twitter:image" content="https://www.secuversetechnologies.com/images/twitter-image.jpg">
-    
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.secuversetechnologies.com">
+    <link rel="canonical" href="https://www.secuverse.ai">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
@@ -32,44 +26,33 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- JS -->
+    <script src="main.js"></script> 
+
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Your Business Name",
-      "url": "https://www.secuversetechnologies.com",
-      "logo": "https://www.secuversetechnologies.com/images/logo.png",
+      "name": "SecuVerse Technologies",
+      "url": "https://www.secuverse.ai",
+      "logo": "https://www.secuverse.ai/images/logo.png",
       "description": "Professional services to help your business grow",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "123 Business Street",
-        "addressLocality": "City",
-        "addressRegion": "State",
-        "postalCode": "12345",
-        "addressCountry": "US"
-      },
+        "streetAddress": "Innov8 Ras Vilas, Lower Ground Floor Salcon Rasvilas, D-1, Saket District Center Saket",
+        "addressLocality": "New Delhi",
+        "addressRegion": "New Delhi",
+        "postalCode": "110017",
+        "addressCountry": "IN"
+    },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+1-123-456-7890",
+        "telephone": "+91-922-037-4783",
         "contactType": "customer service"
       },
-      "sameAs": [
-        "https://www.facebook.com/yourbusiness",
-        "https://www.linkedin.com/company/yourbusiness",
-        "https://twitter.com/yourbusiness"
-      ]
     }
     </script>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'YOUR-GA-ID');
-    </script>    
 
 </head>
 <body>
@@ -80,10 +63,19 @@
             <span class="highlight">V</span>
             <span>erse</span>
         </a>
-        <ul>
+
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>

@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.secuversetechnologies.com/sitemap.xml
+Sitemap: https://www.secuverse.ai/sitemap.xml

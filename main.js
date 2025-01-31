@@ -51,6 +51,23 @@ window.addEventListener('scroll', () => {
     }
 });
 
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+    const nav = document.querySelector('nav');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (!nav.contains(event.target) && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+    }
+});
+
+
+
 // Cookie Consent
 function setCookieConsent() {
     localStorage.setItem('cookieConsent', 'true');

@@ -13,23 +13,18 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="About Your Business Name - Our Story & Team">
     <meta property="og:description" content="Learn about our mission, values, and expert team.">
-    <meta property="og:image" content="https://www.secuversetechnologies.com/images/about-og.jpg">
-    <meta property="og:url" content="https://www.secuversetechnologies.com/about.html">
+    <meta property="og:image" content="https://www.secuverse.ai/images/about-og.jpg">
+    <meta property="og:url" content="https://www.secuverse.ai/about.html">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.secuversetechnologies.com/about.html">
+    <link rel="canonical" href="https://www.secuverse.ai/about.html">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'YOUR-GA-ID');
-    </script>
+    <!-- JS -->
+    <script src="main.js"></script> 
+
         
 </head>
 <body>
@@ -40,10 +35,18 @@
             <span class="highlight">V</span>
             <span>erse</span>
         </a>
-        <ul>
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -85,7 +88,7 @@
                 </li>
             </ul>
 
-            <h2>Our Team</h2>
+            <!-- <h2>Our Team</h2>
             <div class="team-grid">
                 <div class="team-member">
                     <h3>Team Member 1</h3>
@@ -97,7 +100,7 @@
                     <p>Position</p>
                     <p>Brief description or biography.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
